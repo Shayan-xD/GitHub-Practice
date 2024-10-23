@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         Connection connection = null;
         Statement statement = null;
-
+        //adding comment by second ID
         try {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -25,7 +25,7 @@ public class Main {
             statement = connection.createStatement();
 
             // Step 4: Execute SQL SELECT query
-            String sql = " Select actor_id,first_name from actor where actor_id <8;";
+            String sql = " Select actor_id,first_name from actor where actor_id <20;";
             ResultSet resultSet = statement.executeQuery(sql);
 
             // Process the result set
